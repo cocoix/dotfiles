@@ -1,1 +1,2 @@
-require 'options'
+require("options")
+require("config.lazy")
