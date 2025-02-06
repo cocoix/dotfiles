@@ -1,0 +1,8 @@
+theme = Everforest Dark - Hard
+command = /opt/homebrew/bin/fish
+shell-integration = fish
+font-family = mononoki
+font-feature = -calt
+adjust-cell-height = 25%
+adjust-cursor-height = 25%
+cursor-style-blink = false
