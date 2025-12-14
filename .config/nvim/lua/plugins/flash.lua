@@ -3,7 +3,13 @@ return {
         "folke/flash.nvim",
         event = "VeryLazy",
         ---@type Flash.Config
-        opts = {},
+        opts = {
+            prompt = {
+                prefix = {
+                    {"", "FlashPromptIcon"}
+                }
+            }
+        },
         -- stylua: ignore
         keys = {
             { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
