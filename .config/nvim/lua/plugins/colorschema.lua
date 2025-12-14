@@ -16,10 +16,13 @@ return {
         config = function()
             vim.g.gruvbox_material_enable_italic = false
             vim.g.gruvbox_material_background = "hard"
+            vim.g.gruvbox_material_colors_override = {
+                bg0 = { "#202020", "234" }
+            }
         end
     },
     {
-        'AlexvZyl/nordic.nvim',
+        "AlexvZyl/nordic.nvim",
         lazy = false,
         priority = 1000,
         config = function()

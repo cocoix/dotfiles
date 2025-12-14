@@ -1,3 +1,6 @@
+-- https://github.com/saghen/blink.cmp
+-- https://cmp.saghen.dev
+
 return {
     'saghen/blink.cmp',
     -- optional: provides snippets for the snippet source
@@ -21,7 +24,9 @@ return {
         -- C-k: Toggle signature help (if signature.enabled = true)
         --
         -- See :h blink-cmp-config-keymap for defining your own keymap
-        keymap = { preset = 'super-tab' }, -- default is 'default'
+        keymap = {
+            preset = 'super-tab'
+        },
 
         appearance = {
             -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'

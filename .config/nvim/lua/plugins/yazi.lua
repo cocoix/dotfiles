@@ -1,3 +1,5 @@
+-- https://github.com/mikavilpas/yazi.nvim
+
 return {
     "mikavilpas/yazi.nvim",
     version = "*", -- use the latest stable version
