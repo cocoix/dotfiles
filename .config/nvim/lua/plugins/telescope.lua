@@ -6,6 +6,7 @@ return {
             "nvim-telescope/telescope-fzf-native.nvim",
         },
         keys = {
+            { "<leader>f", group = "file", desc = "File" },
             { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
             { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
             { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
