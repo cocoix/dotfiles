@@ -15,6 +15,7 @@ return {
         priority = 1000,
         config = function()
             vim.g.gruvbox_material_enable_italic = false
+            vim.g.gruvbox_material_disable_italic_comment = true
             vim.g.gruvbox_material_background = "hard"
             vim.g.gruvbox_material_colors_override = {
                 bg0 = { "#202020", "234" }
@@ -27,6 +28,7 @@ return {
         priority = 1000,
         config = function()
             require('nordic').load()
+
         end
-    }
+    },
 }

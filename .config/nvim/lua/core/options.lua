@@ -1,9 +1,10 @@
-local indent = 4
-vim.opt.shiftwidth = indent       -- Size of an indent
-vim.opt.tabstop = indent          -- Number of spaces tabs count for
+-- Indent
+vim.opt.expandtab = true -- 使用空格代替 tab
+vim.opt.tabstop = 4 -- 显示时 tab 的宽度
+vim.opt.shiftwidth = 4 -- >>/<</= 缩进的列数
+vim.opt.softtabstop = -1 -- 插入模式下 tab 和 backspace 移动的列数，负数代表使用 shiftwidth 的值
 
 vim.opt.termguicolors = true      -- True color support
-vim.opt.expandtab = true          -- Use spaces instead of tabs
 vim.opt.ignorecase = true         -- Ignore case
 vim.opt.smartcase = true          -- Don't ignore case with capitals
 vim.opt.mouse = 'a'               -- Enable mouse mode
@@ -14,6 +15,6 @@ vim.opt.incsearch = true          -- Show the pattern while typing a search comm
 vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
 vim.opt.smoothscroll = true
 
--- Mapleader must be set before lazy.nvim loading
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+
