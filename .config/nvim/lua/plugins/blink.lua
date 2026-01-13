@@ -26,8 +26,6 @@ return {
         -- See :h blink-cmp-config-keymap for defining your own keymap
         keymap = {
             preset = 'super-tab',
-            ['<CR>'] = { 'accept', 'fallback' },
-            ['<C-CR>'] = { 'fallback' },
         },
 
         appearance = {
@@ -38,6 +36,14 @@ return {
 
         -- (Default) Only show the documentation popup when manually triggered
         completion = { documentation = { auto_show = false } },
+
+        cmdline = {
+            keymap = {
+                preset = 'inherit',
+                ['<Tab>'] = { 'accept', 'fallback' },
+            },
+            completion = { menu = { auto_show = true } },
+        },
 
         -- Default list of enabled providers defined so that you can extend it
         -- elsewhere in your config, without redefining it, due to `opts_extend`
