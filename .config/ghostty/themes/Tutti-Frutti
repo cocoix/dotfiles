@@ -1,5 +1,11 @@
 background = #202020
 foreground = #BDBEB5
+
+cursor-color = #92A984
+cursor-text = #000000
+selection-background = #424241
+selection-foreground = #BDBEB5
+
 palette = 0=#424241
 palette = 1=#CD887B
 palette = 2=#92A984
