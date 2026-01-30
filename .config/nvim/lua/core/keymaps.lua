@@ -11,5 +11,9 @@ vim.keymap.set("n", "<DOwn>", ":resize +2<cr>", opts)
 vim.keymap.set("n", "<Left>", ":vertical resize -2<cr>", opts)
 vim.keymap.set("n", "<Right>", ":vertical resize +2<cr>", opts)
 
-vim.keymap.set("n", "<M-p>", "\"0p")
+vim.keymap.set("n", "<M-p>", "\"0p", opt)
+vim.keymap.set("n", "<M-h>", "<C-w>h", opt)
+vim.keymap.set("n", "<M-l>", "<C-w>l", opt)
+vim.keymap.set("n", "<M-j>", "<C-w>j", opt)
+vim.keymap.set("n", "<M-k>", "<C-w>k", opt)
 
